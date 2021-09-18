@@ -1,0 +1,44 @@
+.socialMedia {
+  background: $grey;
+
+  .mediaText {
+    width: 40%;
+    padding: 1.5rem 0;
+
+    h2 {
+      font-weight: 500;
+    }
+    
+    p {
+      padding: 1rem 0 0 0;
+      line-height: 20px;
+      color: rgb(148, 148, 148);
+    }
+  }
+
+  .mediaIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .socialMedia {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .mediaText {
+        width: 100%;
+      }
+
+      .mediaIcons {
+        padding: 1rem 0;
+        width: 100%;
+      }
+    }
+  }
+}

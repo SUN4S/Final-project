@@ -1,0 +1,148 @@
+.tabsContent {
+  background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42)),url('../../images/img/desert.png');
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+
+  .content {
+    padding: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .tabButtons {
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 100px;
+        opacity: 0.6;
+        height: 100px;
+        background: $primary;
+        color: #FFF;
+        transition: opacity 0.3s;
+
+        span {
+          transform: rotate(-45deg);
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: 1;
+        }
+      }
+      
+      .active {
+        opacity: 1;
+      }
+    }
+
+    .tabText {
+      width: 80%;
+      color: $white;
+      margin: 3rem; 
+      animation: fadeEffect 1s;
+
+      h2 {
+        padding: 1rem 0;
+      }
+
+      p {
+        padding: 1rem 0;
+      }
+
+
+      @keyframes fadeEffect {
+        from{opacity: 0;}
+        to{opacity: 1;}
+      }
+    }
+
+    .tabImages {
+      display: grid;
+      grid-template-columns: 160px 160px;
+      gap: 10px;
+
+      .imageOne {
+        background-image: url('../../images/img/green.png');
+        background-position: center;
+
+        span:hover {
+          cursor: pointer;
+          opacity: 1;
+        }
+      }
+
+      .imageTwo {
+        background-image: url('../../images/img/salad.png');
+        background-position: center;
+        
+        span:hover {
+          cursor: pointer;
+          opacity: 1;
+        }
+      }
+
+      .imageThree {
+        background-image: url('../../images/img/shoes.png');
+        background-position: center;
+
+        span:hover {
+          cursor: pointer;
+          opacity: 1;
+        }
+      }
+
+      .tabImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          background-color:rgba(226, 120, 102, 0.8);
+          width: 100%;
+          height: 100%;
+          color: $white;
+        }
+      }
+
+      .imageLarge {
+          width: 330px;
+          height: 160px;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tabButtons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .tabImages {
+        display: flex;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .content {
+
+      .tabImages {
+        display: grid;
+      }
+    }
+  }
+}

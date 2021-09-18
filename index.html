@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="resources/styles/css/style.css">
+  <title>Cheshire County</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="imgContainer">
+        <img 
+        src="./resources/images/svg/cheshire-county-hygiene-services.svg" 
+        alt="Company logo"
+        class='navLogo'>
+      </div>
+      <ul class="navigation">
+        <li class="active"><a href="#featured" >Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>     
+      <a href="#" class="icon" id="navBurger"><i class="fas fa-bars"></i></a>
+    </div>
+  </nav>
+
+  <section id="featured">
+    <div class="main">
+      <div class="container">
+        
+        <div class="intro">
+          <img 
+          src="./resources/images/svg/cheshire-county-hygiene-services.svg" 
+          alt="Company logo"
+          class='introLogo'>
+          <h2>Explained propiety of out perpetual to you</h2>
+          <hr>
+          <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+            Proceed how any engaged visitor. Explained propriety of out perpetual his you.
+            Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+          <a href="#" class='downloadButton'>DOWNLOAD</a>
+        </div>
+
+        <div class="mainForm">
+
+          <div class="freeTrial">
+            <h3>Try Your <span class="important">FREE</span> Trial Today</h3>
+          </div>
+
+          <form action="/" class="form" if="introForm">
+            <h4>Your details</h4>
+            <div class="inputFields">
+              <input type="text" placeholder=" First Name" required>
+              <input type="text" placeholder=" Last Name" required>
+              <input type="text" placeholder=" Phone number" required>
+            </div>
+            <h4>Type of subscription</h4>
+            <div class="radioButtons">
+
+              <ul>
+                <li>
+                  <input type="radio" id="f-option" name="selector">
+                  <label for="f-option">Montly</label>
+                  
+                  <div class="check"></div>
+                </li>
+                
+                <li>
+                  <input type="radio" id="s-option" name="selector">
+                  <label for="s-option">Yearly</label>
+                  
+                  <div class="check"><div class="inside"></div></div>
+                </li>
+              </ul>
+
+              <!-- <input type="radio" value="monthly" name="monthly" id="monthly">
+              <label for="monthly">MONTHLY</label>
+              <input type="radio" value="yearly" name="yearly" id="yearly">
+              <label for="yearly">YEARLY</label> -->
+            </div>
+          </form>
+
+          <div class="confirm"> 
+            <a href="#" id="submitForm">GET STARTED</a>
+          </div>
+        </div>      
+      </div>     
+    </div>
+    <div class="socialMedia">
+      <div class="container">
+        <div class="mediaText">
+          <h2>Social Media</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam nisi fugit, possimus quaerat tempore!</p>
+        </div>
+        <div class="mediaIcons">
+          <img src="./resources/images/svg/facebook-logo.svg" alt="" srcset="">
+          <img src="./resources/images/svg/instagram-logo.svg" alt="" srcset="">
+          <img src="./resources/images/svg/twitter.svg" alt="" srcset="">
+          <img src="./resources/images/svg/pinterest.svg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+
+    <div class="tabsContent">
+      <div class="container">
+        <div class="content">
+          <div class="tabButtons">
+            <div 
+            class="register button active" 
+            id="defaultOpen" 
+            onclick="openFact(event, 'firstTab')" ><span>REGISTER</span>
+            </div>
+            <div 
+            class="apply button" 
+            id="secondButton"
+            onclick="openFact(event, 'secondTab')"><span>APPLY</span>
+            </div>
+            <div 
+            class="receive button" 
+            id="thirdButton"
+            onclick="openFact(event, 'thirdTab')"><span>RECEIVE</span>
+            </div>
+          </div>
+          <div class="tabContent">
+            <div class="tabText" id="firstTab">
+              <h2>1.Register Tabs with soft transitioning
+                effect. Explained propriety
+                of out perpetual his you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti dicta id in nihil minus harum illo placeat rem. Dolore cumque nulla deleniti dolorem voluptatem. Eligendi, sed repellat? Necessitatibus, eos quod. Quasi omnis voluptates repellendus eveniet neque, totam obcaecati ipsam praesentium impedit sint tenetur maiores dicta? Repellendus iste temporibus nemo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus ea iste excepturi minus cupiditate?</p>
+            </div>
+            <div class="tabText" id="secondTab">
+              <h2>2.Apply Tabs with soft transitioning
+                effect. Explained propriety
+                of out perpetual his you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti dicta id in nihil minus harum illo placeat rem. Dolore cumque nulla deleniti dolorem voluptatem. Eligendi, sed repellat? Necessitatibus, eos quod. Quasi omnis voluptates repellendus eveniet neque, totam obcaecati ipsam praesentium impedit sint tenetur maiores dicta? Repellendus iste temporibus nemo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus ea iste excepturi minus cupiditate?</p>
+            </div>
+            <div class="tabText" id="thirdTab">
+              <h2>3.Receive Tabs with soft transitioning
+                effect. Explained propriety
+                of out perpetual his you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti dicta id in nihil minus harum illo placeat rem. Dolore cumque nulla deleniti dolorem voluptatem. Eligendi, sed repellat? Necessitatibus, eos quod. Quasi omnis voluptates repellendus eveniet neque, totam obcaecati ipsam praesentium impedit sint tenetur maiores dicta? Repellendus iste temporibus nemo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus ea iste excepturi minus cupiditate?</p>
+            </div>
+          </div>
+          <div class="tabImages">
+            <div class="tabImage imageOne"><span>Explore</span></div>
+            <div class="tabImage imageTwo"><span>Explore</span></div>
+            <div class="tabImage imageThree imageLarge"><span>Explore</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainMore">
+      <div class="container">
+        <div class="content">
+          <div class="imageContainer">
+            <img src="./resources/images/svg/cheshire-county-hygiene-services.svg" alt="">
+          </div>
+          <div class="textContainer">
+            <h2>Erat tempor tempus erat malesuada</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+              accumsan et viverra justo commodo.</p>
+              <div class="title">
+                <i class="far fa-eye"></i>
+                <div class="text">
+                  <h4>Title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet.</p>
+                </div>
+              </div>
+              <div class="title">
+                <i class="far fa-comment"></i>
+                <div class="text">
+                  <h4>Title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet. Proin gravida dolor 
+                    sit amet lacus accumsan et viverra justo commodo.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="content">
+        <h2>WHY THIS IS AWESOME</h2>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="infoTabs">
+          <div class="tab">
+            <i class="fab fa-cc-visa"></i>
+            <h3>Thoughtful Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
+          </div>
+          <div class="tab">
+            <i class="fab fa-cc-visa"></i>
+            <h3>Well Crafted</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum.</p>
+          </div>
+          <div class="tab">
+            <i class="fab fa-cc-visa"></i>
+            <h3>Easy to Customize</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pricing">
+     <div class="container">
+       <div class="content">
+        <div class="text">
+          <h2>PRICING OPTIONS</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="pricingOptions">
+          <div class="option">
+            <div class="optionHead">
+              <h3>basic</h3>
+              <h1>$<span>0</span></h1>
+              <p>Free for life</p>
+              <div class="seperation"><p></p></div>
+            </div>
+            <div class="benefits">
+              <p>1 GB OF SPACE</p>
+              <p>10 GB OF BANDWITH</p>
+              <p>3 WEBSITES</p>
+              <p>BASIC CUSTOMIZATION</p>
+              <p>WORDPRESS INTEGRATION</p>
+              <p>EMAIL SUPPORT</p>
+            </div>
+          </div>
+          <div class="option">
+            <div class="optionHead">
+              <h3>Professional</h3>
+              <h1>$<span>19</span></h1>
+              <p>Monthly Payment</p>
+              <div class="seperation"><p>OUR MOST POPULAR</p></div>
+            </div>
+            <div class="benefits">
+              <p>5 GB OF SPACE</p>
+              <p>50 GB OF BANDWITH</p>
+              <p>12 WEBSITES</p>
+              <p>ADVANCED CUSTOMIZATION</p>
+              <p>WORDPRESS INTEGRATION</p>
+              <p>EMAIL SUPPORT</p>
+            </div>
+          </div>
+          <div class="option">
+            <div class="optionHead">
+              <h3>Enterprise</h3>
+              <h1>$<span>70</span></h1>
+              <p>Monthly Payment</p>
+              <div class="seperation"><p></p></div>
+            </div>
+            <div class="benefits">
+              <p>UNLIMITED SPACE</p>
+              <p>UNLIMITED BANDWITH</p>
+              <p>100 WEBSITES</p>
+              <p>ADVANCED CUSTOMIZATION</p>
+              <p>WORDPRESS INTEGRATION</p>
+              <p>24/7 CUSTOMER SUPPORT</p>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+    </section>
+    <section id="reviews">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+          <hr>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="bubble bubble-bottom-left" contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</div>
+              <div class="person">
+                <img src="resources/images/img/avatar_2_u231.png" alt="">
+                <div class="textContainer">
+                  <h2>John S.</h2>
+                  <p>Freelancer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bubble bubble-bottom-left" contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</div>
+              <div class="person">
+                <img src="resources/images/img/avatar_2_u231.png" alt="">
+                <div class="textContainer">
+                  <h2>John S.</h2>
+                  <p>Freelancer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bubble bubble-bottom-left" contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</div>
+              <div class="person">
+                <img src="resources/images/img/avatar_2_u231.png" alt="">
+                <div class="textContainer">
+                  <h2>John S.</h2>
+                  <p>Freelancer</p>
+                </div>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="content">
+          <h1>CONTACT US</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <form action="/" class="contactForm">
+            <div class="inputFields">
+              <input type="text" placeholder=" First Name">
+              <input type="text" placeholder=" Last Name">
+              <input type="text" placeholder=" Phone number">
+            </div>
+
+            <div class="ContactRadioButtons">
+              <ul>
+                <li>
+                  <input type="radio" id="f-option" name="selector">
+                  <label for="f-option">PERSONAL</label>
+                  
+                  <div class="check"></div>
+                </li>
+                
+                <li>
+                  <input type="radio" id="s-option" name="selector">
+                  <label for="s-option">COMPANY</label>
+                  
+                  <div class="check"><div class="inside"></div></div>
+                </li>
+              </ul>
+            </div>            
+            <a id="sendContact">SEND</a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="content">
+          <div class="mediaIcons">
+            <img src="./resources/images/svg/facebook-logo.svg" alt="" srcset="">
+            <img src="./resources/images/svg/instagram-logo.svg" alt="" srcset="">
+            <img src="./resources/images/svg/twitter.svg" alt="" srcset="">
+            <img src="./resources/images/svg/pinterest.svg" alt="" srcset="">
+          </div>
+          <h3>© 2019 Cheshire County</h3>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="resources/scripts/swiperScript.js"></script>
+  <script src="resources/scripts/script.js"></script>
+</body>
+</html>

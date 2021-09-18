@@ -1,0 +1,100 @@
+#pricing {
+  background: $blue;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    .text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        margin: 4rem 0 2rem 0;
+        font-weight: 400;
+        color: $white;
+      }
+
+      hr {
+        width: 15%;
+        border: 1px solid $submit;
+        margin: 0 0 2rem 0;
+      }
+
+      p {
+        color: $white;
+        font-size: 14px;
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    .pricingOptions {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .option {
+        width: 30%;
+
+        .optionHead {
+          text-align: center;
+          background-color: $dark;
+          color: $white;
+          border-radius: 5px 5px 0px 0px;
+          padding: 1rem 0 0 0;
+          
+          h3 {
+            font-weight: 500;
+          }
+  
+          h1 {
+            padding: 1rem 0;
+            font-weight: 400;
+          }
+  
+          p {
+            color: $white;
+            opacity: 50%;
+            margin-bottom: 1rem;
+          }
+  
+          .seperation p{
+            background: $submit;
+            opacity: 1;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0;
+            padding: 0.3rem 0;
+          }
+        }
+
+        .benefits {
+          background-color: $white;
+          text-align: center;
+          color: #86878B;
+          border-radius: 0px 0px 5px 5px;
+
+          p {
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .pricingOptions {
+        flex-direction: column;
+
+        .option {
+          padding: 1rem 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
