@@ -17,6 +17,7 @@
     width: 50%;
     height: 500px;
     color: $white;
+    text-align: justify;
 
     img {
       height: 110px;
@@ -209,11 +210,24 @@
       .intro {
         width: 100%;
         padding: 2rem 0;
+
+        hr {
+          margin: 1rem 0;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          margin: 1rem auto;
+        }
+
       }
 
       .mainForm {
         width: 100%;
-        margin: 2rem auto;
+        margin: 4rem auto;
       }
     }
   }

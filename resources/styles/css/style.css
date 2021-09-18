@@ -138,6 +138,7 @@ nav {
   width: 50%;
   height: 500px;
   color: #fff;
+  text-align: justify;
 }
 
 .main .intro img {
@@ -326,9 +327,18 @@ nav {
     width: 100%;
     padding: 2rem 0;
   }
+  .main .container .intro hr {
+    margin: 1rem 0;
+  }
+  .main .container .intro p {
+    margin-bottom: 1rem;
+  }
+  .main .container .intro a {
+    margin: 1rem auto;
+  }
   .main .container .mainForm {
     width: 100%;
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
 }
 
