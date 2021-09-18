@@ -209,7 +209,11 @@
 
       .intro {
         width: 100%;
-        padding: 2rem 0;
+        padding: 1rem 0;
+
+        h2 {
+          padding-top: 2rem;
+        }
 
         hr {
           margin: 1rem 0;
@@ -227,7 +231,7 @@
 
       .mainForm {
         width: 100%;
-        margin: 4rem auto;
+        margin: 6rem auto 1rem auto;
       }
     }
   }

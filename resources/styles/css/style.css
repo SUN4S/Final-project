@@ -325,7 +325,10 @@ nav {
   }
   .main .container .intro {
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
+  }
+  .main .container .intro h2 {
+    padding-top: 2rem;
   }
   .main .container .intro hr {
     margin: 1rem 0;
@@ -338,7 +341,7 @@ nav {
   }
   .main .container .mainForm {
     width: 100%;
-    margin: 4rem auto;
+    margin: 6rem auto 1rem auto;
   }
 }
 
