@@ -43,6 +43,7 @@
       width: 80%;
       color: $white;
       margin: 3rem; 
+      text-align: justify;
       animation: fadeEffect 1s;
 
       h2 {
@@ -120,6 +121,7 @@
       }
     }
   }
+  
   @media screen and (max-width: 992px) {
     .content {
       display: flex;
@@ -131,13 +133,21 @@
         justify-content: space-around;
       }
 
+      .tabContent {
+        .tabText {
+          width: 100%;
+          margin: 0;
+        }
+
+      }
+
       .tabImages {
         display: flex;
       }
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 748px) {
     .content {
 
       .tabImages {
