@@ -77,6 +77,8 @@ nav {
     left: 0;
     background-color: $dark;
     transform: translateX(-100%);
+    z-index: 999;
+
 
     li {
       padding-left: 1rem;
@@ -86,6 +88,7 @@ nav {
   .active {
     transition: all 0.3s;
     transform: translateX(0);
+
   }
 
   .icon i {
