@@ -22,13 +22,13 @@
         class='navLogo'>
       </div>
       <ul class="navigation">
-        <li class="active"><a href="#featured" >Features</a></li>
+        <li><a href="#featured" >Features</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>     
-      <a href="#" class="icon" id="navBurger"><i class="fas fa-bars"></i></a>
+      <a class="icon" id="navBurger"><i class="fas fa-bars"></i></a>
     </div>
   </nav>
 
@@ -55,25 +55,25 @@
             <h3>Try Your <span class="important">FREE</span> Trial Today</h3>
           </div>
 
-          <form action="/" class="form" if="introForm">
+          <form action="/" class="form" id="introForm">
             <h4>Your details</h4>
             <div class="inputFields">
-              <input type="text" placeholder=" First Name" required>
-              <input type="text" placeholder=" Last Name" required>
-              <input type="text" placeholder=" Phone number" required>
+              <input type="text" placeholder=" First Name" id="nameInput" required>
+              <input type="text" placeholder=" Last Name" id="lastNameInput" required>
+              <input type="text" placeholder=" Phone number" id="phoneInput" required>
             </div>
             <h4>Type of subscription</h4>
             <div class="radioButtons">
 
               <ul>
-                <li>
+                <li id="montlyOption">
                   <input type="radio" id="f-option" name="selector">
                   <label for="f-option">Montly</label>
                   
                   <div class="check"></div>
                 </li>
                 
-                <li>
+                <li id="yearlyOption">
                   <input type="radio" id="s-option" name="selector">
                   <label for="s-option">Yearly</label>
                   
@@ -87,10 +87,7 @@
               <label for="yearly">YEARLY</label> -->
             </div>
           </form>
-
-          <div class="confirm"> 
-            <a href="#" id="submitForm">GET STARTED</a>
-          </div>
+          <button type="submit" class="confirm" id="submitForm" form="introForm">GET STARTED</button>
         </div>      
       </div>     
     </div>
@@ -335,31 +332,33 @@
           <h1>CONTACT US</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-          <form action="/" class="contactForm">
+          <form action="/" class="contactForm" id="contactForm">
             <div class="inputFields">
-              <input type="text" placeholder=" First Name">
-              <input type="text" placeholder=" Last Name">
-              <input type="text" placeholder=" Phone number">
+              <input type="text" placeholder=" First Name" id="contactName" required>
+              <input type="text" placeholder=" Last Name" id="contactLastName" required>
+              <input type="text" placeholder=" Phone number" id="contactNumber" required>
             </div>
 
             <div class="ContactRadioButtons">
+
               <ul>
-                <li>
-                  <input type="radio" id="f-option" name="selector">
-                  <label for="f-option">PERSONAL</label>
+                <li id="personalOption">
+                  <input type="radio" id="p-option" name="selector">
+                  <label for="p-option">PERSONAL</label>
                   
                   <div class="check"></div>
                 </li>
                 
-                <li>
-                  <input type="radio" id="s-option" name="selector">
-                  <label for="s-option">COMPANY</label>
+                <li id="companyOption">
+                  <input type="radio" id="c-option" name="selector">
+                  <label for="c-option">COMPANY</label>
                   
                   <div class="check"><div class="inside"></div></div>
                 </li>
               </ul>
+
             </div>            
-            <a id="sendContact">SEND</a>
+            <button id="sendContact" type="submit" form="contactForm">SEND</button>
           </form>
         </div>
       </div>

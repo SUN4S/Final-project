@@ -22,7 +22,6 @@
       background-color: $white;;
       display: flex;
       flex-direction: column;
-      width: 400px;
       height: 300px;
       justify-content: space-around;
       align-items:flex-start;
@@ -127,10 +126,11 @@
     }
   }
           
-    a {
+    button {
       text-decoration: none;
       color: $white;
       background-color: $submit;
+      border: none;
       padding: 1rem 3rem;
       border-radius: 5px;
       margin: 0 auto;

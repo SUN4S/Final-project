@@ -181,21 +181,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: $white;
       width: 100%;
       background-color: $submit;     
       padding: 1rem 2rem;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      border: none;
 
       &:hover {
         cursor: pointer;
         opacity: 0.8;
-      }
-
-      a {
-        text-align: center;
-        color: $white;
-        text-decoration: none;
       }
     }
 
@@ -213,6 +209,10 @@
       .intro {
         width: 100%;
         padding: 3rem 0;
+      }
+
+      .mainForm {
+        width: 100%;
       }
     }
   }
